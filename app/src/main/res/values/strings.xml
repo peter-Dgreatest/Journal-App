@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyJournal</string>
+    <string name="title_activity_login">Login</string>
+
+    //setting string for login button
+    <string name="login_text">Login</string>
+
+    <string name="logout_text">Logout</string>
+
+
+    <string name="title">Title</string>
+    <string name="text">Text</string>
+
+    <string name="save_text">Save</string>
+</resources>

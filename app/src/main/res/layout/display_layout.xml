@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:id="@+id/layoutholder"
+
+android:orientation="vertical"
+tools:context="com.itcrusaders.myjournal.journal_display">
+
+<!--
+    This horizontal linear layout displays the description and priority of a task
+    in a single horizontal line
+-->
+
+
+    <!-- TextView that displays the description of a task -->
+    <TextView
+        android:id="@+id/journal_title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- An empty view for spacing out the description and priority views -->
+    <TextView
+        android:id="@+id/journalNote"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/primary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journal_title" />
+
+    <!-- A priority circle that is colored in programmatically in the adapter code -->
+
+
+<!-- A gray divider line at the bottom of each task -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journalNote" />
+
+</android.support.constraint.ConstraintLayout>
+
